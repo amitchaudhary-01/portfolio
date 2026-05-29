@@ -5,7 +5,7 @@ import Button from 'react-bootstrap/Button';
 const Home = () => {
   return (
      <div className="text-white ">
-      <h1 className="text-3xl font-bold">Welcome Amit!</h1>
+      <h1 className="text-3xl font-bold">Welcome vuwon!</h1>
 
 
 
