@@ -18,8 +18,8 @@ const Layout = () => {
       </main>
 
       {/* Footer */}
-      <Footer />
 
+<Footer/>
     </div>
   )
 }

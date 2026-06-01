@@ -1,62 +1,55 @@
-import React from 'react'
-import { NavLink } from 'react-router'
+import React from "react";
+import { Link } from "react-router";
 
 const Footer = () => {
   return (
+    <footer className="bg-black text-white mt-5">
+      <div className="container py-5">
+        <div className="row">
 
-    <footer className="bg-black/70 text-white border-t border-white/20">
+          {/* Company */}
+          <div className="col-lg-4 col-md-6 mb-4">
+            <h4 className="fw-bold">My Website</h4>
+            <p>
+              Building modern web applications with React,
+              Bootstrap, and Tailwind CSS.
+            </p>
+          </div>
 
-      
+          {/* Quick Links */}
+          <div className="col-lg-4 col-md-6 mb-4">
+            <h5 className="fw-bold">Quick Links</h5>
+            <ul className="list-unstyled">
+              <li><a href="/" className="text-white text-decoration-none">Home</a></li>
+              <li>
+                <Link to="/aboutus" className="text-white text-decoration-none">about</Link>
+              </li>
+              <li><a href="/portfolio" className="text-white text-decoration-none">Portfolio</a></li>
+              <li><a href="/blog" className="text-white text-decoration-none">Blogs</a></li>
+              <li><a href="/products" className="text-white text-decoration-none">Products</a></li>
+              <li><a href="/ourteam" className="text-white text-decoration-none">Our team</a></li>
+            </ul>
+          </div>
 
-      <div className="text-center py-6 text-sm text-gray-300">
-        © {new Date().getFullYear()} MyWebsite. All rights reserved.
+          {/* Contact */}
+          <div className="col-lg-4 col-md-12 mb-4">
+            <h5 className="fw-bold">Contact</h5>
+            <p>Email: ac984939@gmail.com</p>
+            <p>Phone: +977 98XXXXXXXX</p>
+            <p>Nepal</p>
+          </div>
+
+        </div>
       </div>
 
+      {/* Bottom Bar */}
+      <div className="text-center py-3 border-top border-secondary">
+        <p className="mb-0">
+          © {new Date().getFullYear()} My Portfolio. All Rights Reserved.
+        </p>
+      </div>
     </footer>
-    
-    // <footer className="bg-black/60 backdrop-blur-md text-white mt-10 border-t border-white/20">
+  );
+};
 
-    //   <div className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
-
-    //     {/* About Section */}
-    //     <div>
-    //       <h2 className="text-xl font-bold mb-3">MyWebsite</h2>
-    //       <p className="text-gray-300 text-sm">
-    //         We build modern web applications using React and Tailwind CSS.
-    //         Clean, fast, and responsive designs for everyone.
-    //       </p>
-    //     </div>
-
-    //     {/* Quick Links */}
-    //     <div>
-    //       <h3 className="text-lg font-semibold mb-3">Quick Links</h3>
-    //       <ul className="space-y-2 text-gray-300">
-    //         <li><NavLink to="/" className="hover:text-yellow-300">Home</NavLink></li>
-    //         <li><NavLink to="/career" className="hover:text-yellow-300">Career</NavLink></li>
-    //         <li><NavLink to="/company" className="hover:text-yellow-300">Company</NavLink></li>
-    //         <li><NavLink to="/blog" className="hover:text-yellow-300">Blog</NavLink></li>
-    //         <li><NavLink to="/portfolio" className="hover:text-yellow-300">Portfolio</NavLink></li>
-    //       </ul>
-    //     </div>
-
-    //     {/* Contact Section */}
-    //     <div>
-    //       <h3 className="text-lg font-semibold mb-3">Contact</h3>
-    //       <p className="text-gray-300 text-sm">Email: info@mywebsite.com</p>
-    //       <p className="text-gray-300 text-sm">Phone: +977-98XXXXXXXX</p>
-    //       <p className="text-gray-300 text-sm">Location: Butwal, Nepal</p>
-    //     </div>
-
-    //   </div>
-
-    //   {/* Bottom Bar */}
-    //   <div className="text-center py-4 border-t border-white/20 text-gray-400 text-sm">
-    //     © {new Date().getFullYear()} MyWebsite. All rights reserved.
-    //   </div>
-
-    // </footer>
-   
-  )
-}
-
-export default Footer
+export default Footer;

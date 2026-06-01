@@ -30,25 +30,24 @@ const TopNavbar = () => {
   return(
     
   <div className='flex justify-center items-center h-screen w-full'>
-   <LoaderPinwheel className='text-9xl text-blue-500 animate-spin'/>
+   <LoaderPinwheel className='text-9xl text-blue-500 animate-spin h-40 w-30'/>
   </div>
   )
 }
   return (
 
      <nav 
-     className="fixed top-0 left-0  z-10 backdrop-blur-md border-b border-white/20 w-full bg-orange-400 gap-40"
-     >
-   
+     
+   className="fixed top-0 left-0  z-10 backdrop-blur-md border-b border-white/20 w-full gap-40">
 
-        <Navbar expand="lg" className="bg-body-tertiary " >
+        <Navbar expand="lg" className="bg-orange-400 " >
       <Container>
         {/* <Navbar.Brand href="/home" >Amit</Navbar.Brand> */}
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             
-            <img className="h-10 w-10" src="logo.webp"/>
+            <img className="rounded-md w-22 h-10 " src="logo.webp"/>
 
             <Nav.Link href="/" className="t0-blue-500">Home</Nav.Link>
           
@@ -68,7 +67,7 @@ const TopNavbar = () => {
            
           </Nav>
 
-          <Nav.Link href="/login" className="to-blue-500 justify-end">Login <LogIn className="text-green-400 " /></Nav.Link>
+          <Nav.Link href="/login" className="to-blue-500 justify-end">Login <LogIn className="text-black " /></Nav.Link>
         </Navbar.Collapse>
         
         
